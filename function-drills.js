@@ -86,16 +86,32 @@ let movement = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]];
 
 function checkIfNegative(move)
 {
-  return (move[0] > 0 && move[1] > 0 ? true : false) ;
+  return move[0] >= 0 ? (move[1] >= 0 ? true : false) : false; 
 }
 
 function filterNegatives()
 {
-  console.log(movement.filter(checkIfNegative));
+  return movement.filter(checkIfNegative);
 }
 
-filterNegatives();
+function addSteps(steps)
+{
+  return Math.abs(steps[0])+Math.abs(steps[1]);
+}
+
+function mapping()
+{
+  return movement.map(addSteps);
+}
+
+
+console.log(filterNegatives());
 
 
 
 
+
+
+
+
+//reduce
