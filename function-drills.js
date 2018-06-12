@@ -81,32 +81,39 @@ stormWarning('Downtown');
 stormWarning('Beach');
 stormWarning('Lake');
 */
+
 //forEach, filter and map
-let movement = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]];
+// let movement = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]];
 
-function checkIfNegative(move)
-{
-  return move[0] >= 0 ? (move[1] >= 0 ? true : false) : false; 
-}
+// function checkIfNegative(move)
+// {
+//   return move[0] >= 0 ? (move[1] >= 0 ? true : false) : false; 
+// }
 
-function filterNegatives()
-{
-  return movement.filter(checkIfNegative);
-}
+// function filterNegatives()
+// {
+//   return movement.filter(checkIfNegative);
+// }
 
-function addSteps(steps)
-{
-  return Math.abs(steps[0])+Math.abs(steps[1]);
-}
+// function addSteps(steps)
+// {
+//   return Math.abs(steps[0])+Math.abs(steps[1]);
+// }
 
-function mapping()
-{
-  return movement.map(addSteps);
-}
+// function mapping()
+// {
+//   return movement.map(addSteps);
+// }
 
 
-console.log(filterNegatives());
-console.log(mapping());
+// console.log(filterNegatives());
+// console.log(mapping());
+
+// let x = mapping();
+
+// x.forEach(function(element) {
+//   console.log(element);
+// });
 
 
 
