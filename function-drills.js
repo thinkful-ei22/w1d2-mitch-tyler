@@ -106,6 +106,7 @@ function mapping()
 
 
 console.log(filterNegatives());
+console.log(mapping());
 
 
 
