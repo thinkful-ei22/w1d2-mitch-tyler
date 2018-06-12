@@ -115,11 +115,23 @@ stormWarning('Lake');
 //   console.log(element);
 // });
 
-
-
-
-
-
-
-
 //reduce
+
+const startingString = 'noggin oreo the moon time tele steed his tent apollo her lives though shoo tofu budapest'; 
+let strArray = startingString.split(' ');
+
+// long form function
+// function red(accumulator, currentValue) {
+//   if (currentValue.length === 3) {
+//     return accumulator + ' ';
+//   }
+//   else {
+//     return (accumulator + currentValue.slice(-1)).toUpperCase();
+//   }
+// }
+
+//ternary
+const red = (accumulator, currentValue) => currentValue.length === 3 ? (accumulator + ' ') : (accumulator + currentValue.slice(-1)).toUpperCase();
+
+console.log(strArray.reduce(red, ''));
+
