@@ -52,7 +52,7 @@
 // filter(myNames, filter);
 
 // //Functions as return values
-
+/*
 // Create a hazardWarningCreator function which takes one argument: typeOfWarning
 function hazardWarningCreator(typeOfWarning) {
   //Create a warningCounter variable that initializes at 0
@@ -80,10 +80,21 @@ stormWarning('Mountain');
 stormWarning('Downtown');
 stormWarning('Beach');
 stormWarning('Lake');
+*/
+//forEach, filter and map
+let movement = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]];
 
+function checkIfNegative(move)
+{
+  return (move[0] > 0 && move[1] > 0 ? true : false) ;
+}
 
+function filterNegatives()
+{
+  console.log(movement.filter(checkIfNegative));
+}
 
-
+filterNegatives();
 
 
 
